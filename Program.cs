@@ -37,3 +37,11 @@ ProdutoDigital produto2 = new CursoOnline()
 
 produto1.ExibirInformacoes();
 produto2.ExibirInformacoes();
+
+// Atividade-3
+
+JogoDigital jogoDigital = new JogoDigital
+(
+    Nome = "Minecraft",
+    plataforma = "PC"  
+);

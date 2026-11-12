@@ -7,9 +7,9 @@ namespace Atividade_3
         public override void ExibirInformacoes()
         {
             Console.WriteLine($"""
-                Nome: {Nome},
-                Preço: {Preco:C},
-                Carga Horária: {CargaHoraria} 
+                Nome: {Nome}
+                Preço: {Preco:C}
+                Carga Horária: {CargaHoraria}h
             """);
         }
     }

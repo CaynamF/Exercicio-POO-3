@@ -21,7 +21,7 @@ namespace Atividade_3
             Console.WriteLine($"""
                 Nome: {Nome}
                 Preço: {Preco:C}
-                Quantidades de Páginas: {QuantidadePaginas} Hora
+                Quantidades de Páginas: {QuantidadePaginas} 
             """);
         }
     }
