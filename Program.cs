@@ -40,8 +40,37 @@ produto2.ExibirInformacoes();
 
 // Atividade-3
 
-JogoDigital jogoDigital = new JogoDigital
-(
-    Nome = "Minecraft",
-    plataforma = "PC"  
-);
+JogoDigital jogoDigital = new JogoDigital("Minecraft","PC");
+JogoFisico jogoFisico = new JogoFisico("God of War", "PlayStation 5");
+
+jogoDigital.ExibirInformacoes();
+jogoFisico.ExibirInformacoes();
+
+// Atividade-4
+
+Notificacao generico = new();
+Notificacao email = new NotificacaoEmail();
+Notificacao sms = new NotificacaoSMS();
+Notificacao push = new NotificacaoPush();
+
+generico.Enviar();
+email.Enviar();
+sms.Enviar();
+push.Enviar();
+
+// Atividade-5
+
+Entrega expressa = new EntregaExpressa(100);
+Entrega economico = new EntregaEconomica(100);
+Entrega local = new RetiradaLocal(100);
+
+List<Entrega> listaFrete = new()
+{
+    expressa,
+    economico,
+    local
+};
+foreach (var lista in listaFrete)
+{
+    Console.WriteLine($"Frete: {lista.CalcularFrete():C2}");
+}

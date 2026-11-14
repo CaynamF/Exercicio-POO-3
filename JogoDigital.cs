@@ -2,10 +2,6 @@ namespace Atividade_3
 {
     public class JogoDigital : Jogo
     {
-        public JogoDigital()
-        {
-            
-        }
         public JogoDigital(string nome, string plataforma) : base(nome, plataforma)
         {
             Nome = nome;
